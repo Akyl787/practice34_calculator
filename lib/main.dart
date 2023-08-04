@@ -26,9 +26,12 @@ class _CalculatorState extends State<Calculator> {
   late TextEditingController controllerFirstNumber = TextEditingController();
   late TextEditingController controllerSecondNumber = TextEditingController();
   double? sum;
-  void initstate() {
+
+  @override
+  void initState() {
     controllerFirstNumber = TextEditingController();
     controllerSecondNumber = TextEditingController();
+    super.initState();
   }
 
   @override
